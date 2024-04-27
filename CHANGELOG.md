@@ -1,5 +1,12 @@
 # Changelog
 
+## [19.29.1](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v19.29.0...v19.29.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* Fix invalid `contact` for MCCGQ01LM ([#7452](https://github.com/Koenkk/zigbee-herdsman-converters/issues/7452)) ([d9640a4](https://github.com/Koenkk/zigbee-herdsman-converters/commit/d9640a4d39fcc924d97e2a1034105c75452ff8c2))
+
 ## [19.29.0](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v19.28.0...v19.29.0) (2024-04-27)
 
 
