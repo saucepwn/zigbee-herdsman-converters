@@ -10,7 +10,7 @@ import {Definition, Fz, KeyValue, KeyValueAny, Tz} from '../lib/types';
 const e = exposes.presets;
 const ea = exposes.access;
 import {precisionRound} from '../lib/utils';
-import {onOff, electricityMeter, light} from '../lib/modernExtend';
+import {onOff, electricityMeter, light, flow} from '../lib/modernExtend';
 
 const manuSinope = {manufacturerCode: Zcl.ManufacturerCode.SINOPE_TECHNOLOGIES};
 
@@ -1420,6 +1420,7 @@ const definitions: Definition[] = [
         toZigbee: [tz.cover_via_brightness],
         meta: {battery: {voltageToPercentage: {min: 5400, max: 6800}}},
         exposes: [e.valve_switch(), e.valve_position(), e.battery_low(), e.battery(), e.battery_voltage()],
+        extend: [flow()],
         configure: async (device, coordinatorEndpoint) => {
             const endpoint = device.getEndpoint(1);
             const binds = [
